@@ -1,0 +1,41 @@
+Getters and setters are used in Java (and many other object-oriented programming 
+languages) to provide controlled access to the private members (fields) of a class.
+They allow encapsulation, which is an important principle in object-oriented 
+programming.
+
+Here are some reasons why getters and setters are used:
+
+1. Encapsulation: Getters and setters provide a level of abstraction and 
+encapsulation. By making the fields private and providing public getter and 
+setter methods, you can control how the values are accessed and modified from 
+outside the class. This allows you to enforce data validation, apply business 
+logic, or make changes to the internal representation of the data without 
+affecting the external code that uses the class.
+
+2. Data Hiding: By making the fields private, you hide the internal implementation 
+details of the class and expose only the necessary interface to interact with the 
+data. This helps in maintaining the integrity of the class and prevents direct 
+access to the fields, reducing the chances of accidental modification or misuse.
+
+3. Validation and Business Logic: Getters and setters allow you to validate the 
+input before setting the value of a field. For example, you can check if the input 
+is within a valid range or satisfies certain conditions. Similarly, you can 
+perform additional logic or calculations before returning a value from a getter. 
+This ensures that the data remains consistent and valid throughout the lifetime 
+of the object.
+
+4. Flexibility for Modifications: Using getters and setters allows you to modify 
+the internal implementation of a class without affecting the external code that 
+uses it. For example, if you decide to change the way a field is stored or 
+computed, you can update the getter and setter methods accordingly, while the 
+calling code remains unchanged.
+
+5. Access Control: Getters and setters can have different access modifiers, such 
+as public, private, protected, or package-private. This allows you to control 
+the visibility and accessibility of the fields. You can make the getter public 
+to allow read access to a field, while keeping the setter private or protected to 
+restrict write access to certain methods or subclasses.
+
+Overall, using getters and setters provides a standardized way to access and 
+modify the state of an object, ensuring proper encapsulation, data integrity, 
+and flexibility in managing the class's internal representation.
